@@ -1,6 +1,12 @@
-# The prime factors of 13195 are 5, 7, 13 and 29.
-# What is the largest prime factor of the number 600851475143 ?
+"""
+PROBLEM 3
 
+The prime factors of 13195 are 5, 7, 13 and 29.
+
+What is the largest prime factor of the number 600851475143 ?
+
+https://projecteuler.net/problem=3
+"""
 
 given = 600851475143
 
@@ -20,8 +26,8 @@ def find_factors(n):
 		# if d is greater than sqrt(n) we stop on a condition
 		if d*d > n:
 			if n > 1: 
-				factors.append(n)
+				factors.append(int(n))
 				break
-	print factors	
+	return factors	
 
-find_factors(given) 
+print(max(find_factors(given))) 
