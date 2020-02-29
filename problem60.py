@@ -29,7 +29,7 @@ def check_pair(p1, p2):
 start = time.time()
 plist = list(prime_generator(10000))
 
-
+# I know this code is ugly! I plan on fixing it :)
 good_pairs_sets = []
 progress = 0
 for p in itertools.combinations(plist, 2):
